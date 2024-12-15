@@ -7,5 +7,12 @@ export default class Utils {
 
   constructor(options: Options) {
     this.options = { ...defaults, ...options }
+    const a: any = {}
+
+    const b = async () => {
+      console.log('no')
+    }
+
+    console.log(a?.c, b)
   }
 }
